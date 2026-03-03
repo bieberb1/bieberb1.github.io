@@ -12,13 +12,15 @@
   --light-text: #374151;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden; /* prevent horizontal scroll without breaking position:fixed */
+}
 
 body {
   font-family: 'DM Sans', sans-serif;
   color: var(--text);
   background: var(--navy);
-  overflow-x: hidden;
 }
 
 /* ── PROGRESS BAR ──────────────────────────────────────────────────────── */
