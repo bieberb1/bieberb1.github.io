@@ -1,249 +1,203 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!---<link rel="shortcut icon" type="image/png" href="./images/favicon.png" /-->
   <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
   <link rel="manifest" href="./images/site.webmanifest">
 
-  <!-- Put your site title here -->
-  <title>
-    Brian Bieber | Research Scientist based in Ann Arbor, Michigan.
-  </title>
+  <title>Brian Bieber | Data Analyst &amp; Research Scientist</title>
+  <meta name="description" content="Brian Bieber — Data Analyst and Research Scientist based in Ann Arbor, Michigan. Specializing in biostatistics, epidemiology, and data visualization.">
+  <meta name="keywords" content="Brian Bieber, data analyst, research scientist, biostatistics, epidemiology, data visualization, SQL, Python, R, Ann Arbor">
 
-  <meta name="description" content="Add small description of yourself.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="data visualization, project management, data governance" content="Brian Bieber: analyst, biostats, data visualization, proejct management, data governance" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css" />
 </head>
-
 <body>
 
-  <!-- ***** Header ***** -->
+<div class="progress-bar" id="progress"></div>
 
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <!--<li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>-->
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
+<header class="top-nav">
+  <span class="top-nav__name">Brian Bieber</span>
+  <ul class="top-nav__links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
 
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <span>Brian Bieber</span>
-        </h1>
-        <p>Research scientist based in Ann Arbor, Michigan.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-      </div>
-    </div>
+<nav class="nav-dots" id="navDots">
+  <button class="nav-dot active" data-section="0" data-label="Home"></button>
+  <button class="nav-dot" data-section="1" data-label="About"></button>
+  <button class="nav-dot" data-section="2" data-label="Work"></button>
+  <button class="nav-dot" data-section="3" data-label="Skills"></button>
+  <button class="nav-dot" data-section="4" data-label="Contact"></button>
+</nav>
 
-    
-  </header>
+<!-- ── HERO ──────────────────────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="section-inner">
+    <div class="title-eyebrow reveal">Data Analyst &amp; Research Scientist</div>
+    <h1 class="title-main reveal reveal-delay-1">Brian<br>Bieber</h1>
+    <div class="title-divider reveal reveal-delay-2"></div>
+    <p class="title-sub reveal reveal-delay-3">Ann Arbor, Michigan</p>
+    <a href="#contact" class="hero-cta reveal reveal-delay-4">Get in touch</a>
+  </div>
+  <div class="scroll-hint">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    Scroll
+  </div>
+</section>
 
-  <main role="main">
+<!-- ── ABOUT ─────────────────────────────────────────────────────────────── -->
+<section id="about">
+  <div class="section-inner">
+    <span class="section-number reveal">01 — About</span>
+    <h2 class="section-header reveal reveal-delay-1">Data analyst and<br>research scientist</h2>
 
-    <!-- ***** Work ***** -->
-
-    <section class="work" id="work">
-      <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>GitHub Portfolio</h3>
-              <p>
-                Projects I have worked on and archived
-              </p>
-              <ul class="work__list">
-                <li>Biostatistics</li>
-                <li>Data visualization</li>
-                <li>Data wrangling</li>
-                <li>Models</li>
-              </ul>
-              <div class="work__links">
-                <a href="https://github.com/bieberb1/" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/bieberb1/" title="Visit projects" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Google scholar</h3>
-              <p>
-                Publication list
-              </p>
-              <ul class="work__list">
-                <li>DOPPS</li>
-                <li>LURN</li>
-                <li>CMS</li>
-                <li>USRDS</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://scholar.google.com/citations?hl=en&user=V8mbex8AAAAJ" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://scholar.google.com/citations?hl=en&user=V8mbex8AAAAJ">
-                  <img src="./images/google-scholar.png" class="work__code" title="View articles" alt="View articles">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ***** Clients ***** -->
-
-    <!--section class="client" id="clients">
-      <div class="row">
-        <h2>Clients</h2>
-        <div class="client__logos"-->
-          <!-- Add logos of the clients or companies you'have worked with. -->
-          <!--img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
-        </div>
-      </div>
-    </section-->
-
-    <!-- ***** About ***** -->
-
-    <!-- <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <p>
-              I am a research scientist with training in epidemiology, biostatistics, and physiology.
-            </p> 
-            <a href="https://www.linkedin.com/in/brian-bieber-4174491b1/" class="link__text">
-              LinkedIn Profile <span>&rarr;</span>
-            </a>
-            <a href="https://www.linkedin.com/in/brian-bieber-4174491b1/">
-              <img src="./images/linkedin.svg" class="work__code" title="Linkedin" alt="LinkedIn">
-            </a>
-          </div>
-          <div class="about__photo-container">
-              <img class="about__photo" src="./images/headshot2.jpg" alt="" />
-            <div class="work__links">
-              <a href="./files/Brian Bieber Resume FINAL.pdf" class="btn">My Resume</a>
-              
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <section class="work" id="about">
-      <div class="row">
-        <h2>About me </h2>
-        <div class="work__boxes">
-          <p>
-            I am a research scientist with training in epidemiology, biostatistics, and physiology.
-          </p>
-          <div class="work__links">
-            <a href="https://www.linkedin.com/in/brian-bieber-4174491b1/" class="link__text">
-              LinkedIn Profile <span>&rarr;</span>
-            </a>
-            <a href="https://www.linkedin.com/in/brian-bieber-4174491b1/">
-              <img src="./images/linkedin.svg" class="work__code" title="LinkedIn profile" alt="LinkedIn profile">
-            </a>
-          </div>
-          <div class="work__links">
-            <a href="./files/Brian Bieber Resume FINAL.pdf" class="link__text">
-              Download my resume <span>&rarr;</span>
-            </a>
-            <a href="./files/Brian Bieber Resume FINAL.pdf">
-              <img src="./images/resume-icon-png-19037.png" class="work__code" title="Resume" alt="Resume">
-            </a>
-          </div>
-        </p> 
-    
-        </div>
-      </div>
-  </main>
-
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          I'm always interested in working with passionate, curious colleagues.
-          The quickest way to reach out to me is via email.
-        </p>
-        <a href="mailto:bieberb1@gmail.com" class="btn">bieberb1@gmail.com</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://github.com/bieberb1/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/brian-bieber-4174491b1/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://scholar.google.com/citations?hl=en&user=V8mbex8AAAAJ">
-            <img src="./images/google-scholar.png" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <!---p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+    <div class="about-body">
+      <p class="prose reveal reveal-delay-2">
+        I am a data analyst and research scientist with graduate training in epidemiology, biostatistics, and physiology. I specialize in transforming complex clinical and administrative datasets into clear, actionable insights.
       </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div--->
+      <p class="prose reveal reveal-delay-3">
+        My work spans large-scale observational studies, registry analyses, and data governance — with a focus on rigorous methodology and reproducible research.
+      </p>
+      <div class="about-actions reveal reveal-delay-4">
+        <a href="https://www.linkedin.com/in/brian-bieber-4174491b1/" target="_blank" class="action-link">LinkedIn Profile <span>&rarr;</span></a>
+        <a href="./files/Brian Bieber Resume.pdf" target="_blank" class="hero-cta" style="margin-top: 0;">Download Resume</a>
+      </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
+<!-- ── WORK ──────────────────────────────────────────────────────────────── -->
+<section id="work">
+  <div class="section-inner">
+    <span class="section-number reveal">02 — Work</span>
+    <h2 class="section-header reveal reveal-delay-1">My Work</h2>
+
+    <div class="two-col">
+      <div class="card reveal reveal-delay-2">
+        <div class="card-header teal">Published Research</div>
+        <div class="card-body">
+          <p style="margin-bottom: 1rem;">125+ peer-reviewed publications from large-scale epidemiological studies and clinical data registries.</p>
+          <ul class="work-list">
+            <li>DOPPS — Dialysis Outcomes &amp; Practice Patterns Study</li>
+            <li>LURN — Urinary Research Network</li>
+            <li>CMS Medicare data analysis</li>
+            <li>USRDS — US Renal Data System</li>
+          </ul>
+          <a href="https://scholar.google.com/citations?hl=en&user=V8mbex8AAAAJ" target="_blank" class="card-link">
+            View Publications <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="card reveal reveal-delay-3">
+        <div class="card-header mid">GitHub Portfolio</div>
+        <div class="card-body">
+          <p style="margin-bottom: 1rem;">A collection of data analysis projects spanning clinical research, predictive modeling, and exploratory data analysis.</p>
+          <ul class="work-list">
+            <li>Biostatistics &amp; survival analysis</li>
+            <li>Data visualization</li>
+            <li>Data wrangling &amp; pipelines</li>
+            <li>Statistical modeling</li>
+          </ul>
+          <a href="https://github.com/bieberb1/" target="_blank" class="card-link">
+            Visit GitHub <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ────────────────────────────────────────────────────────────── -->
+<section id="skills">
+  <div class="section-inner">
+    <span class="section-number reveal">03 — Skills</span>
+    <h2 class="section-header reveal reveal-delay-1">Skills &amp; Tools</h2>
+
+    <div class="skills-grid">
+      <div class="feature-card reveal reveal-delay-2">
+        <h4>Languages</h4>
+        <div class="skill-list">
+          <span>Python</span>
+          <span>R</span>
+          <span>SQL</span>
+          <span>SAS</span>
+        </div>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-3">
+        <h4>Visualization</h4>
+        <div class="skill-list">
+          <span>Tableau</span>
+          <span>Power BI</span>
+          <span>ggplot2</span>
+          <span>matplotlib</span>
+        </div>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-4">
+        <h4>Methods</h4>
+        <div class="skill-list">
+          <span>Biostatistics</span>
+          <span>Epidemiology</span>
+          <span>Regression Analysis</span>
+          <span>Survival Analysis</span>
+        </div>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-5">
+        <h4>Tools &amp; Platforms</h4>
+        <div class="skill-list">
+          <span>Excel</span>
+          <span>Git</span>
+          <span>REDCap</span>
+          <span>Claude Code</span>
+          <span>AWS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ───────────────────────────────────────────────────────────── -->
+<section id="contact">
+  <div class="section-inner">
+    <span class="section-number reveal">04 — Contact</span>
+    <h2 class="section-header reveal reveal-delay-1">Get in Touch</h2>
+    <p class="prose reveal reveal-delay-2" style="max-width: 520px;">
+      I'm always open to discussing new opportunities, research collaborations, or data projects. The quickest way to reach me is via email.
+    </p>
+    <a href="mailto:bieberb1@gmail.com" class="hero-cta reveal reveal-delay-3">bieberb1@gmail.com</a>
+
+    <div class="footer-social reveal reveal-delay-4">
+      <a href="https://github.com/bieberb1/" target="_blank" title="GitHub">
+        <img src="./images/github.svg" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/brian-bieber-4174491b1/" target="_blank" title="LinkedIn">
+        <img src="./images/linkedin.svg" alt="LinkedIn">
+      </a>
+      <a href="https://scholar.google.com/citations?hl=en&user=V8mbex8AAAAJ" target="_blank" title="Google Scholar">
+        <img src="./images/google-scholar.png" alt="Google Scholar">
+      </a>
+    </div>
+
+    <div class="footer-note reveal reveal-delay-5">
+      Brian Bieber &nbsp;·&nbsp; Data Analyst &amp; Research Scientist &nbsp;·&nbsp; Ann Arbor, MI &nbsp;·&nbsp; &copy; 2026
+    </div>
+  </div>
+</section>
+
+<a href="#hero" class="back-to-top" id="backToTop" title="Back to Top">
+  <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+</a>
+
+<script src="./index.js"></script>
 </body>
-
 </html>
